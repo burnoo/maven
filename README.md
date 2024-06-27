@@ -4,7 +4,7 @@ I've created this repository for delayed and abandoned Kotlin projects. I'm star
 It's hosted on Azure and can be browsed [here](https://dev.azure.com/burnoo/maven/_artifacts/feed/public).
 
 ## Setup
-To add this repository to your project, include the following URL in your `settings.gradle.kts` file:
+To add this repository to your project, include this maven repository in your `settings.gradle.kts` file:
 
 ```kotlin
 dependencyResolutionManagement {
@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 (TODO: Information about published libraries will be filled in later)
 
 ## What is `-beapN`
-The `-beapN` suffix stands for burnoo's Early Access Preview. This naming convention, together with `includeVersionByRegex` in the Maven block, prevents my Maven repository from overriding official versions and allows me to provide updates for libraries. Additionally, it means that when the creator of the library releases the proper version, it can be automatically picked up and updated by dependency bots or IDEs.
+The `-beapN` suffix stands for burnoo's Early Access Preview. This naming convention, together with `includeVersionByRegex` in the Maven content block, prevents burnoo's Maven repository from overriding official versions and allows me to provide updates for libraries. Additionally, it means that when the creator of the library releases the proper version, it can be automatically picked up and updated by dependency bots or IDEs.
 
 #### Update examples in IDEA:
 <details>
@@ -34,10 +34,10 @@ The `-beapN` suffix stands for burnoo's Early Access Preview. This naming conven
 </details>
 
 ## Requests
-I am open to taking requests from the community. If there is a library that is important to you, please tag me in a pull request or issue. A few rules:
+I am open to taking requests from the community. If there is a library that is important to you, please tag me in a pull request or an issue. A few rules:
 1. If it's a JVM library, try [JitPack](https://jitpack.io/) first.
 2. I won't host any changes that I haven't reviewed first, so I need to be able to do a code review first (this means it should be written in Kotlin and shouldn't do any black magic 🪄).
-3. Should not be too huge, as I have only 2GB storage for now
+3. Library should not be too huge, as I have only 2GB storage for now
 
 ## Security
 To ensure the security of the libraries you are downloading, you can follow these steps:
