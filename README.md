@@ -20,7 +20,31 @@ dependencyResolutionManagement {
 ```
 
 ## Published libraries
-(TODO: Information about published libraries will be filled in later)
+<details>
+<summary><b><code>com.russhwolf:multiplatform-settings:1.2.0-beap1</code></b></summary>
+
+### My fork
+https://github.com/burnoo/multiplatform-settings
+
+### Installation
+In yoor module's dependencies:
+```kotlin
+commonMain {
+    dependencies {
+        implementation("com.russhwolf:multiplatform-settings:1.2.0-beap1")
+        implementation("com.russhwolf:multiplatform-settings-coroutines:1.2.0-beap1")
+        // etc.
+    }
+}
+```
+### Changes
+- Merging branch `1.2` from original repository: https://github.com/burnoo/multiplatform-settings/pull/1
+- Updating Gradle configuration and GitHub actions to support this Maven: https://github.com/burnoo/multiplatform-settings/pull/2
+
+### Release details
+- Published from https://github.com/burnoo/multiplatform-settings/tree/v1.2.0-beap1
+- Publish GitHub action: https://github.com/burnoo/multiplatform-settings/actions/runs/9700339405 
+</details>
 
 ## What is `-beapN`
 The `-beapN` suffix stands for burnoo's Early Access Preview. This naming convention, together with `includeVersionByRegex` in the Maven content block, prevents burnoo's Maven repository from overriding official versions and allows me to provide updates for libraries. Additionally, it means that when the creator of the library releases the proper version, it can be automatically picked up and updated by dependency bots or IDEs.
