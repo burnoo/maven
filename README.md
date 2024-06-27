@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 https://github.com/burnoo/multiplatform-settings
 
 ### Installation
-In yoor module's dependencies:
+In your module's dependencies:
 ```kotlin
 commonMain {
     dependencies {
