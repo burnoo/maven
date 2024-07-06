@@ -9,8 +9,7 @@ To add this repository to your project, include this maven repository in your `s
 ```kotlin
 dependencyResolutionManagement {
     repositories {
-        maven {
-            url = uri("https://pkgs.dev.azure.com/burnoo/maven/_packaging/public/maven/v1")
+        maven(url = "https://pkgs.dev.azure.com/burnoo/maven/_packaging/public/maven/v1") {
             content {
                 includeVersionByRegex(".*", ".*", ".*-beap[0-9]+")
             }
@@ -44,6 +43,32 @@ commonMain {
 ### Release details
 - Published from https://github.com/burnoo/multiplatform-settings/tree/v1.2.0-beap1
 - Publish GitHub action: https://github.com/burnoo/multiplatform-settings/actions/runs/9700339405 
+</details>
+
+<details>
+<summary><b><code>dev.icerock.moko:geo:0.6.1-beap1</code></b></summary>
+
+### My fork
+https://github.com/burnoo/moko-geo
+
+### Installation
+In your module's dependencies:
+```kotlin
+commonMain {
+    dependencies {
+        implementation("dev.icerock.moko:geo:0.6.1-beap1")
+    }
+}
+```
+### Changes
+* Add support for moko permissions 0.18.0 by @burnoo in https://github.com/burnoo/moko-geo/pull/4
+* Update project dependencies versions to the newest (stack: JVM 17 / Kotlin 1.9.24 / Gradle 8.8) (full list [here](https://github.com/burnoo/moko-geo/compare/0.6.0...burnoo:moko-geo:burnoo-maven?expand=1#diff-697f70cdd88ba88fe77eebda60c7e143f6ad1286bca75017421e93ad84fb87df))
+
+**Full Changelog**: https://github.com/burnoo/moko-geo/compare/0.6.0...release/0.6.1-beap1
+
+### Release details
+- Published from https://github.com/burnoo/moko-geo/tree/release/0.6.1-beap1
+- Publish GitHub action: https://github.com/burnoo/moko-geo/actions/runs/9819227106
 </details>
 
 ## What is `-beapN`
