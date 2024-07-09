@@ -1,5 +1,5 @@
 # burnoo's Maven repository ☺️
-I've created this repository for delayed and abandoned Kotlin projects. I'm starting it as a personal public Maven (for private projects where I need them), but I'm going to take requests from community for other libraries (see [Requests](#Requests) section).
+I've created this repository for delayed or outdated Kotlin projects. I'm starting it as a personal public Maven (for private projects where I need them), but I'm going to take requests from community for other libraries (see [Requests](#Requests) section).
 
 It's hosted on Azure and can be browsed [here](https://dev.azure.com/burnoo/maven/_artifacts/feed/public).
 
